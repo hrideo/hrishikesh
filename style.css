@@ -1,0 +1,144 @@
+:root {
+    --gray: #333;
+    --lightgray: #ddd;
+    --white: #f2f2f2;
+    --blue: #291dd0;
+    --red: #d01d35;
+    --green: #1dd023;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    width: 75vw;
+    /* max-width: 900px; */
+    /* background-color: ; */
+}
+h1 {
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+    padding: 20px;
+    text-align: center;
+}
+.menubar {
+    overflow: hidden;
+    background-color: var(--gray);
+    width: 100%;
+    height: 6%;
+}
+
+.menubar a {
+    float: left;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menubar a.right {
+    float: right;
+}
+
+.menubar a:hover {
+    background: var(--lightgray);
+    color: var(--gray);
+}
+main {
+    color: var(--white);
+}
+#home {
+    height: 94vh;
+}
+
+#education {
+    height: 100vh;
+    background-color: var(--red);
+}
+#skills {
+    height: 100vh;
+    background-color: var(--green);
+}
+/* #certificates {
+    height: 100vh;
+    background-color: var(--blue);
+} */
+#projects {
+    height: 100vh;
+    background-color: var(--red);
+}
+#professional {
+    height: 100vh;
+    background-color: var(--blue);
+}
+#resume {
+    height: 100vh;
+    background-color: var(--red);
+}
+#contact {
+    height: auto;
+    background-color: var(--green);
+}
+
+.resume-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.education-div {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-div {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.home-social {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+.home-social a {
+    font-size: 28px;
+    display: inline-block;
+    color: var(--white);
+    /* background: var(--red); */
+    padding-right: 20px;
+}
+
+.home-img {
+    background-image: url("assets/home.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.icon-cent {
+    text-align: center;
+}
+
+#contact table {
+    width: 80%;
+    margin: auto;
+}
+#contact td {
+    font-size: 48px;
+    padding: 30px;
+}
+
+#contact a {
+    color: var(--red);
+}
