@@ -1,124 +1,113 @@
 :root {
-    --gray: #333;
-    --lightgray: #ddd;
-    --white: #f2f2f2;
-    --blue: #291dd0;
-    --red: #d01d35;
-    --green: #1dd023;
+    --dark: #333333;
+    --active: #ffffff;
+    --inactive: #feeee2;
+    --bgcolor: #2b547d;
+    --blue2: #5f9ea0;
+    /* --dark2: #355a82;
+    --dark1: #2b547d;
+    --light1: #feeee2;
+    --light2: #fcd3b5;
+    --light3: #fab684;
+    --light4: #f68b78; */
 }
 
 body {
     margin: auto;
+    width: 99vw;
+    font-size: 100%;
     padding: 0;
-    width: 75vw;
     /* max-width: 900px; */
     /* background-color: ; */
 }
+
 h1 {
+    color: var(--active);
+    font: italic 72px "Josefin Sans", sans-serif;
     margin-bottom: 0px;
+    text-shadow: -5px -5px 5px var(--bgcolor);
+}
+h2 {
+    padding: 2%;
+    padding-top: 8%;
+    text-align: center;
+    color: var(--inactive);
+    font: 38px "Josefin Sans", sans-serif;
+    margin-top: 0px;
+}
+li {
+    color: var(--inactive);
+}
+.subhead {
+    font: 600 26px "Titillium Web", sans-serif;
+}
+.italic {
+    font: italic 20px "Titillium Web", sans-serif;
+}
+p {
+    color: var(--inactive);
+    font: 600 20px "Titillium Web", sans-serif;
+    margin: 0px;
 }
 
-h2 {
-    margin-top: 0px;
-    padding: 20px;
-    text-align: center;
-}
 .menubar {
     overflow: hidden;
-    background-color: var(--gray);
+    background-color: var(--bgcolor);
     width: 100%;
     height: 6%;
+    font: 600 24px "Titillium Web", sans-serif;
 }
-
+.menubar-width {
+    /* width: 83%; */
+    padding-left: 8.3%;
+    margin: auto;
+}
 .menubar a {
     float: left;
     display: block;
-    color: var(--white);
+    color: var(--inactive);
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
+    margin: 06px 012px;
 }
-
 .menubar a.right {
     float: right;
 }
-
 .menubar a:hover {
-    background: var(--lightgray);
-    color: var(--gray);
+    background: var(--inactive);
+    color: var(--dark);
+    border-radius: 3px;
 }
-main {
-    color: var(--white);
-}
+
 #home {
     height: 94vh;
 }
-
-#education {
-    height: 100vh;
-    background-color: var(--red);
-}
-#skills {
-    height: 100vh;
-    background-color: var(--green);
-}
-/* #certificates {
-    height: 100vh;
-    background-color: var(--blue);
-} */
-#projects {
-    height: 100vh;
-    background-color: var(--red);
-}
-#professional {
-    height: 100vh;
-    background-color: var(--blue);
-}
-#resume {
-    height: 100vh;
-    background-color: var(--red);
-}
-#contact {
-    height: auto;
-    background-color: var(--green);
-}
-
-.resume-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-
-.education-div {
-    display: flex;
-    height: auto;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
 .home-div {
     display: flex;
     height: auto;
-    padding: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
     padding-bottom: 0px;
+    margin: auto;
 }
-
 .home-social {
     display: flex;
     height: auto;
-    padding: 20px;
+    padding-left: 10%;
     padding-top: 0px;
+    margin: auto;
 }
 .home-social a {
-    font-size: 28px;
+    font-size: 40px;
     display: inline-block;
-    color: var(--white);
-    /* background: var(--red); */
-    padding-right: 20px;
+    color: var(--green);
+    padding-right: 2%;
+    padding-left: 0.5%;
 }
-
+.home-social a:hover {
+    color: var(--active);
+}
 .home-img {
     background-image: url("assets/home.jpg");
     background-repeat: no-repeat;
@@ -126,19 +115,107 @@ main {
     background-size: cover;
 }
 
-.icon-cent {
-    text-align: center;
+#education {
+    height: auto;
+    padding-bottom: 10%;
+    background-color: var(--bgcolor);
+}
+.education-div {
+    display: flex;
+    height: auto;
+    padding-left: 20%;
+    margin-left: 10%;
+    /* margin: auto;
+    width: 45%; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
+/* ul{
+    text-align: center;
+} */
+
+#skills {
+    height: auto;
+    padding-bottom: 10%;
+    background-color: var(--active);
+}
+#skills h2 {
+    color: var(--bgcolor);
+}
+#skills p {
+    color: var(--bgcolor);
+}
+#skills li {
+    color: var(--bgcolor);
+}
+
+#work {
+    height: auto;
+    padding-bottom: 10%;
+    background-color: var(--bgcolor);
+}
+
+#resume-down {
+    height: auto;
+    padding-bottom: 15%;
+    background-color: var(--active);
+}
+#resume-down h2 {
+    color: var(--bgcolor);
+}
+.resume-down-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.btn {
+    background-color: var(--bgcolor);
+    color: var(--inactive);
+    padding: 15px 45px;
+    border-radius: 6px;
+    border-style: hidden;
+    box-shadow: 0px 1px 12px 6px var(--dark);
+    font: 600 22px "Titillium Web", sans-serif;
+}
+.btn:hover {
+    background-color: var(--dark);
+    color: var(--bgcolor);
+    box-shadow: 1px 3px 12px 6px var(--bgcolor);
+}
+
+#contact {
+    height: auto;
+    padding-bottom: 15%;
+    background-color: var(--bgcolor);
+}
 #contact table {
     width: 80%;
     margin: auto;
 }
 #contact td {
-    font-size: 48px;
+    font-size: 34px;
     padding: 30px;
+    width: 50%;
+}
+#contact a {
+    color: var(--inactive);
+}
+#contact a:link {
+    text-decoration: none;
+}
+#contact a:hover {
+    color: var(--dark);
+}
+#contact h2 {
+    padding-top: 1%;
+    color: var(--inactive);
+}
+#contact p {
+    color: var(--inactive);
 }
 
-#contact a {
-    color: var(--red);
+.icon-cent {
+    text-align: center;
 }
