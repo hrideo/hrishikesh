@@ -141,6 +141,7 @@ p {
     background-color: var(--active);
 }
 #skills h2 {
+    padding-top: 5%;
     color: var(--bgcolor);
 }
 #skills p {
